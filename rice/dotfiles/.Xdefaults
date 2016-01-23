@@ -1,0 +1,28 @@
+
+URxvt*font: xft:Terminess\ Powerline:pixelsize=12
+!URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:style=Regular:size=10
+!URxvt*font: xft:Tamsyn:style=Regular:size=10:hinting=false
+!URxvt*boldFont: xft:Tamsyn:style=Bold:size=10:hinting=false
+
+!URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=10:hinting=true
+!*font: xft:Terminus (TTF) for Powerline:pixelsize=16:hinting=true
+ 
+!*boldFont: xft:Terminus (TTF) for Powerline:bold:pixelsize=16:hinting=true
+
+URxvt.scrollBar: off
+URxvt.perl-ext-common:default,url-select,keyboard-select,clipboard,autocomplete-ALL-the-things,
+URxvt.urlLauncher:chromium-browser
+URvxt.url-select.button: 1
+URxvt.underlineURLs:true
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:    xsel -ib
+URxvt.clipboard.pastecmd:   xsel -ob
+!AMBIANCE
+
+
+URxvt.depth: 32
+#include "rice/colors/terminal/base16-xresources/base16-ocean.dark.256.xresources"
+
