@@ -1,0 +1,46 @@
+
+!URxvt*font: xft:Terminess\ Powerline:pixelsize=12
+!URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:style=Regular:size=10
+!URxvt*font: xft:Tamsyn:style=Regular:size=10:hinting=false
+!URxvt*boldFont: xft:Tamsyn:style=Bold:size=10:hinting=false
+
+!URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=10:hinting=true
+!*font: xft:Terminus (TTF) for Powerline:pixelsize=16:hinting=true
+ 
+!*boldFont: xft:Terminus (TTF) for Powerline:bold:pixelsize=16:hinting=true
+
+
+!URxvt.font: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt.boldFont: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+!URxvt*font: -uw-ttyp0-medium-r-normal--11-100-75-75-c-60-uw-fontspecific
+!URxvt.font: xft:Ttyp0
+!URxvt.boldFont: xft:Ttyp0
+!URxvt.font: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt.boldFont: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
+Xcursor.theme: "OpenZone White Slim"
+URxvt*utf8: 1
+URxvt*locale: 1
+URxvt.scrollBar: off
+URxvt.perl-ext-common:default,url-select,keyboard-select,clipboard,autocomplete-ALL-the-things,
+URxvt.urlLauncher:chromium-browser
+URvxt.url-select.button: 1
+URxvt.underlineURLs:true
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:    xsel -ib
+URxvt.clipboard.pastecmd:   xsel -ob
+!AMBIANCE
+
+
+URxvt.depth: 32
+#include "dotfiles/rice/colors/terminal/base16-xresources/base16-grayscale.light.256.xresources"
+#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.256.xresources"
+#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.dark.xresources"
+
+URxvt.background: [100]base00
+
+
+
