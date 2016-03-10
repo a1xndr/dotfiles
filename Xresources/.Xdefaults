@@ -3,13 +3,15 @@
 URxvt.font: xft:SimSun:antialias=true:pixelsize=12:hinting=true
 URxvt.boldFont: xft:SimSun:antialias=true:pixelsize=12:hinting=true
 
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
+URxvt.font: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
+!Xft.dpi: 96
+!Xft.antialias: true
+!Xft.hinting: true
+!Xft.rgba: none
+!Xft.autohint: true
+!Xft.hintstyle: hintfull
+!Xft.lcdfilter: lcddefault
 
 Xcursor.theme: "OpenZone White Slim"
 URxvt*utf8: 1
@@ -31,6 +33,7 @@ URxvt.clipboard.pastecmd:   xsel -ob
 URxvt.depth: 32
 #include "dotfiles/rice/colors/terminal/base16-xresources/base16-grayscale.light.256.xresources"
 #include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.256.xresources"
+#include "dotfiles/rice/colors/terminal/base16-xresources/base16-atelierestuary.dark.xresources"
 
 URxvt.background: [100]base00
 

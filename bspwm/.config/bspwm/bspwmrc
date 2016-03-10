@@ -14,17 +14,17 @@ bspc config gapless_monocle     true
 bspc config bottom_padding	3
 
 
-bspc config focused_border_color        "#363d4a"  #"#11809E"
+bspc config focused_border_color        "#364a3d"  #"#11809E"
 bspc config focused_locked_border_color "#C7B579"
 
-bspc config active_border_color         "#1a202b"
-bspc config active_locked_border_color  "#7E7F89"
+bspc config active_border_color         "#1a2b20"
+bspc config active_locked_border_color  "#7E897F"
 
 bspc config normal_border_color         "#21252d" #"#3F3E3B"
 bspc config normal_locked_border_color  "#3F3E3B"
 
 bspc config presel_border_color         "#A7BF81"
-bspc config urgent_border_color         "#EFA29A"
+bspc config urgent_border_color         "#EF9AA2"
 
 bspc rule -a Gimp desktop=^8 follow=on floating=on
 bspc rule -a Chromium desktop=^2
