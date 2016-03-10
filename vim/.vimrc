@@ -8,6 +8,7 @@ filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'vim-scripts/c.vim'
+Plugin 'vim-scripts/fortran.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kovisoft/slimv'
 Plugin 'chriskempson/base16-vim'
@@ -15,7 +16,7 @@ Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/OmniCppComplete'
 call vundle#end()
 
-
+nnoremap <CR> :noh<CR><CR>
 " General {{{1
 set autoread
 set number
@@ -82,14 +83,6 @@ function! AddColumn()
   setl scrollbind
   let &so=@z
 endfunction
-
-
-
-
-
-
-
-
 colorscheme base16-ocean
 "let base16colorspace=256
 set background=dark
