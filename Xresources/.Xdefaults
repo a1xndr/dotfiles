@@ -1,10 +1,10 @@
 !URxvt.font: -*-screen-medium-*-*-*-14-*-*-*-*-*-*-*
 !URxvt.boldFont: -*-screen-bold-*-*-*-14-*-*-*-*-*-*-*
-URxvt.font: xft:SimSun:antialias=true:pixelsize=12:hinting=true
-URxvt.boldFont: xft:SimSun:antialias=true:pixelsize=12:hinting=true
+!URxvt.font: xft:SimSun:antialias=true:pixelsize=12:hinting=true
+!URxvt.boldFont: xft:SimSun:antialias=true:pixelsize=12:hinting=true
+!URxvt.font: -*-screen-medium-*-*-*-14-*-*-*-*-*-*-*
+!URxvt.boldFont: -*-screen-bold-*-*-*-14-*-*-*-*-*-*-*
 
-URxvt.font: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
 !Xft.dpi: 96
 !Xft.antialias: true
 !Xft.hinting: true
@@ -34,6 +34,7 @@ URxvt.depth: 32
 #include "dotfiles/rice/colors/terminal/base16-xresources/base16-grayscale.light.256.xresources"
 #include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.256.xresources"
 #include "dotfiles/rice/colors/terminal/base16-xresources/base16-atelierestuary.dark.xresources"
+#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.dark.xresources"
 
 URxvt.background: [100]base00
 
