@@ -1,7 +1,3 @@
-" ------------ ajh's .vimrc ------------
-" Plugins {{{1
-
-" Syntax, FileType, Colorscheme {{{1
 syntax on
 filetype plugin indent on
 
@@ -14,6 +10,7 @@ Plugin 'kovisoft/slimv'
 Plugin 'chriskempson/base16-vim'
 Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/OmniCppComplete'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 call vundle#end()
 
 nnoremap <CR> :noh<CR><CR>

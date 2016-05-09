@@ -13,6 +13,9 @@
 !Xft.hintstyle: hintfull
 !Xft.lcdfilter: lcddefault
 
+
+URxvt.font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+
 Xcursor.theme: "OpenZone White Slim"
 URxvt*utf8: 1
 URxvt*locale: 1

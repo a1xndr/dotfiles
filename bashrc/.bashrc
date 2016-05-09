@@ -90,7 +90,9 @@ fi
 alias vrm='ssh -X vrm.alxndr.ninja'
 alias nevis='rdesktop -g 1366x750 nevis.bu.edu:513'
 alias calc='qalc'
-
+alias bfa='cd ~/Develpoment/sphere-packing-sbox/bubble-fill-analytic'
+alias sda='cd ~/Develpoment/sphere-packing-sbox/sphere-drop-analytic'
+alias sps='cd ~/Develpoment/sphere-packing-sbox/'
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -133,3 +135,9 @@ alias sl="ls"
 
 
 
+
+PATH="/home/alxndr/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/alxndr/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/alxndr/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/alxndr/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/alxndr/perl5"; export PERL_MM_OPT;
