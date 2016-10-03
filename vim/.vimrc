@@ -10,9 +10,15 @@ Plugin 'kovisoft/slimv'
 Plugin 'chriskempson/base16-vim'
 Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/OmniCppComplete'
+Plugin '0ax1/lxvc'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'airblade/vim-gitgutter'
+Plugin 'godlygeek/tabular'
+Plugin 'joshdick/onedark.vim'
+Plugin 'vim-scripts/ScrollColors'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'justinmk/vim-syntax-extra'
 call vundle#end()
-
 nnoremap <CR> :noh<CR><CR>
 " General {{{1
 set autoread
@@ -80,9 +86,8 @@ function! AddColumn()
   setl scrollbind
   let &so=@z
 endfunction
-colorscheme base16-ocean
 "let base16colorspace=256
-set background=dark
+"set background=dark
 
 if v:version >= 600
   filetype plugin on
@@ -109,3 +114,10 @@ endfunction
 nnoremap <F4> :call UpdateTags()
 set tags+=~/.vim/tags/cpp
 
+for prefix in ['i', 'n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
+set termguicolors
+colorscheme base16-ocean

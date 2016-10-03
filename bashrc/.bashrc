@@ -114,3 +114,38 @@ PERL5LIB="/home/alxndr/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LI
 PERL_LOCAL_LIB_ROOT="/home/alxndr/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/alxndr/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/alxndr/perl5"; export PERL_MM_OPT;
+export TERM='rxvt-unicode'
+
+###################################################################################################################
+################################################ Coloured man pages ###############################################
+
+man() {
+    if [ "$TERM" = 'linux' ]; then
+        env \
+            LESS_TERMCAP_mb=$(printf "\e[34m") \
+            LESS_TERMCAP_md=$(printf "\e[1;31m") \
+            LESS_TERMCAP_me=$(printf "\e[0m") \
+            LESS_TERMCAP_se=$(printf "\e[0m") \
+            LESS_TERMCAP_so=$(printf "\e[30;43m") \
+            LESS_TERMCAP_ue=$(printf "\e[0m") \
+            LESS_TERMCAP_us=$(printf "\e[32m") \
+                    /usr/bin/man "$@"
+    else
+        env \
+            LESS_TERMCAP_mb=$(printf "\e[1;34m") \
+            LESS_TERMCAP_md=$(printf "\e[38;5;9m") \
+            LESS_TERMCAP_me=$(printf "\e[0m") \
+            LESS_TERMCAP_se=$(printf "\e[0m") \
+            LESS_TERMCAP_so=$(printf "\e[30;43m") \
+            LESS_TERMCAP_ue=$(printf "\e[0m") \
+            LESS_TERMCAP_us=$(printf "\e[38;5;10m") \
+                    /usr/bin/man "$@"
+    fi
+}
+
+# added by Miniconda3 4.1.11 installer
+export PATH="/home/alxndr/miniconda3/bin:$PATH"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export _JAVA_AWT_WM_NONREPARENTING=1

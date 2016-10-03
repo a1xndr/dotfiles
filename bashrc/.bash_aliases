@@ -10,7 +10,8 @@ alias calc='qalc'
 alias bfa='cd ~/Develpoment/sphere-packing-sbox/bubble-fill-analytic'
 alias sda='cd ~/Develpoment/sphere-packing-sbox/sphere-drop-analytic'
 alias sps='cd ~/Develpoment/sphere-packing-sbox/'
-alias svm='rdesktop -g 1366x750 IST_STAFF_VM062.ad.bu.edu'
+alias svm='xfreerdp /sec:rdp  /smart-sizing /size:1920x1080 /v:IST_STAFF_VM062.ad.bu.edu'
+alias rdp='xfreerdp /sec:rdp /smart-sizing /size:1280x1024 /v:'
 alias grep="grep --color=auto"
 alias less="less -R"
 alias ls="ls -F --color=auto"
