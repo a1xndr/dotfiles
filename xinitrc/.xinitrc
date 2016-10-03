@@ -1,4 +1,6 @@
 #!/bin/bash
+dunst &
+xmodmap .xmodmap &
 xset -b &
 xrdb ~/.Xdefaults &
 xrandr --output LVDS1 --auto --primary

@@ -16,6 +16,28 @@
 
 URxvt.font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 
+<<<<<<< Updated upstream
+=======
+!URxvt*font: xft:Terminess\ Powerline:pixelsize=12
+!URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:style=Regular:size=10
+!URxvt*font: xft:Tamsyn:style=Regular:size=10:hinting=false
+!URxvt*boldFont: xft:Tamsyn:style=Bold:size=10:hinting=false
+
+!URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=10:hinting=true
+!*font: xft:Terminus (TTF) for Powerline:pixelsize=16:hinting=true
+ 
+!*boldFont: xft:Terminus (TTF) for Powerline:bold:pixelsize=16:hinting=true
+
+
+URxvt.font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+!URxvt.boldFont: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+!URxvt*font: -uw-ttyp0-medium-r-normal--11-100-75-75-c-60-uw-fontspecific
+!URxvt.font: xft:Ttyp0
+!URxvt.boldFont: xft:Ttyp0
+!URxvt.font: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
+!URxvt.boldFont: -sony-*-*-*-*-*-*-*-*-*-*-*-*-*
+>>>>>>> Stashed changes
 Xcursor.theme: "OpenZone White Slim"
 URxvt*utf8: 1
 URxvt*locale: 1
@@ -36,12 +58,11 @@ URxvt*buffered:               true
 
 
 URxvt.depth: 32
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-grayscale.light.256.xresources"
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.256.xresources"
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-atelierestuary.dark.xresources"
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.xresources"
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.dark.xresources"
+!#include "dotfiles/rice/colors/terminal/base16-xresources/base16-grayscale.light.256.xresources"
+!#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.256.xresources"
+!#include "dotfiles/rice/colors/terminal/base16-xresources/base16-atelierestuary.dark.xresources"
+!#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.xresources"
+#include "rice/colors/term/base16-xresources/base16-ocean.dark.xresources"
 
-#URxvt.background: [100]base00
-
+!#URxvt.background: [100]base00
 

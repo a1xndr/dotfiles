@@ -1,0 +1,27 @@
+[2016-10-02 21:15:58] WeeChat 1.5 (compiled on May  3 2016 19:49:51)
+[2016-10-02 21:15:58] Reading configuration file sec.conf
+[2016-10-02 21:15:58] Reading configuration file weechat.conf
+[2016-10-02 21:15:58] Reading configuration file plugins.conf
+[2016-10-02 21:15:58] Reading configuration file charset.conf
+[2016-10-02 21:15:58] Reading configuration file logger.conf
+[2016-10-02 21:15:58] Reading configuration file exec.conf
+[2016-10-02 21:15:58] Reading configuration file trigger.conf
+[2016-10-02 21:15:58] Reading configuration file aspell.conf
+[2016-10-02 21:15:58] Reading configuration file alias.conf
+[2016-10-02 21:15:58] Reading configuration file xfer.conf
+[2016-10-02 21:15:58] Reading configuration file irc.conf
+[2016-10-02 21:15:58] Reading configuration file relay.conf
+[2016-10-02 21:15:59] Reading configuration file autosort.conf
+[2016-10-02 21:15:59] Writing configuration file autosort.conf
+[2016-10-02 21:15:59] Reading configuration file colorize_nicks.conf
+[2016-10-02 21:15:59] Reading configuration file buffers.conf
+[2016-10-02 21:15:59] Reading configuration file iset.conf
+[2016-10-02 21:15:59] Reading configuration file script.conf
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
+[2016-10-02 21:15:59] irc: connecting to server znc.vrm.alxndr.ninja/6697 (SSL)...
