@@ -20,5 +20,4 @@ alias ll="ls -l"
 alias la="ls -A"
 alias lh="ls -lh"
 alias lash="ls -lAsh"
-alias sl="ls"
 
