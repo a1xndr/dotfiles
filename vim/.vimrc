@@ -4,19 +4,20 @@ filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'vim-scripts/c.vim'
-Plugin 'vim-scripts/fortran.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kovisoft/slimv'
 Plugin 'chriskempson/base16-vim'
-Plugin 'ervandew/supertab'
-Plugin 'vim-scripts/OmniCppComplete'
+"Plugin 'ervandew/supertab'
+"Plugin 'vim-scripts/OmniCppComplete'
 Plugin '0ax1/lxvc'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'airblade/vim-gitgutter'
 Plugin 'godlygeek/tabular'
-Plugin 'joshdick/onedark.vim'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'justinmk/vim-syntax-extra'
+Plugin 'w0rp/ale'
+Plugin 'fatih/vim-go'
+Plugin 'lifepillar/vim-mucomplete'
+Plugin 'vim-scripts/dbext.vim'
+Plugin 'lervag/vimtex'
 call vundle#end()
 nnoremap <CR> :noh<CR><CR>
 " General {{{1
@@ -86,8 +87,8 @@ function! AddColumn()
   let &so=@z
 endfunction
 "let base16colorspace=256
-"set background=dark
-
+set background=dark
+let g:airline_powerline_fonts = 0
 if v:version >= 600
   filetype plugin on
   filetype indent on
@@ -98,13 +99,14 @@ let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_ShowAccess = 1
 let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
-let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
-let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
+set completeopt=menuone,noselect
+inoremap <expr> <c-e> mucomplete#popup_exit("\<c-e>")
+inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
+inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
+  set shortmess+=c   " Shut off completion messages
+  let g:mucomplete#enable_auto_at_startup = 1
 
 function! UpdateTags()
   execute ":!ctags -R --languages=C++ --c++-kinds=+p --fields=+iaS --extra=+q ./"
@@ -113,14 +115,9 @@ endfunction
 nnoremap <F4> :call UpdateTags()
 set tags+=~/.vim/tags/cpp
 
-for prefix in ['i', 'n', 'v']
-  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
-    exe prefix . "noremap " . key . " <Nop>"
-  endfor
-endfor
-set termguicolors
+"set termguicolors
 colorscheme base16-ocean
-set clipboard^=unnamedplus,unnamed
+"set clipboard^=unnamedplus,unnamed
 
 set path+=**
 set wildmenu
@@ -131,4 +128,9 @@ let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+hi NonText ctermbg=none 
+hi Normal guibg=NONE ctermbg=NONE
+
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
 
