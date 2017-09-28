@@ -80,9 +80,11 @@ super + button{4,5}
 #
 
 super + Return
-	st -f -*-ttyp0-*-*-*-*-16-*-*-*-*-*-*-*
+        st -f Terminus:pixelsize=24,Sans:pixelsize=24
+        #if [ $HDPI = 0 ]; then st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*; else  fi
 super + shift + Return
-	st -f Terminus:pixelsize=24,Sans:pixelsize=24
+        st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*
+        #if [ $HDPI = 1 ]; then st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*; else st -f Terminus:pixelsize=24,Sans:pixelsize=24 fi
 
 super + space	
 	dmenu_run -p launch: -l 5 -nb "#2b303b" -nf "#d9d9d9" -sf "#2b303b" -sb "#d9d9d9"
@@ -92,5 +94,8 @@ super + space
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + L
-	~/slock.sh
+super + l
+	~/dotfiles/scripts/slock.sh 
+
+super + m
+        amixer set Master toggle

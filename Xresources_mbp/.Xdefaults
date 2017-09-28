@@ -37,8 +37,9 @@ URxvt.depth: 32
 !#include "dotfiles/rice/colors/terminal/base16-xresources/base16-grayscale.light.256.xresources"
 !#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.256.xresources"
 !#include "dotfiles/rice/colors/terminal/base16-xresources/base16-atelierestuary.dark.xresources"
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.xresources"
-#include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.dark.xresources"
+##include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.light.xresources"
+##include "dotfiles/rice/colors/terminal/base16-xresources/base16-ocean.dark.xresources"
+#include "dotfiles/rice/colors/terminal/base16-xresources/xresources/base16-ocean.Xresources"
 
 !#URxvt.background: [100]base00
 

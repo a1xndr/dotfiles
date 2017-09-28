@@ -143,9 +143,4 @@ man() {
     fi
 }
 
-# added by Miniconda3 4.1.11 installer
-export PATH="/home/alxndr/miniconda3/bin:$PATH"
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
 export _JAVA_AWT_WM_NONREPARENTING=1

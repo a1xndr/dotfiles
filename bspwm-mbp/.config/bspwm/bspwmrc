@@ -4,8 +4,8 @@
 
 
 bspc monitor DP2 -n 0 -d 1 2 3 4 5 
-bspc monitor DP1 -n 1 -d 6 7 8 9 10 
-bspc monitor eDP1 -n 2 -d 11 12 13 14 15 
+bspc monitor DP-1 -n 1 -d 6 7 8 9 10 
+bspc monitor eDP-1 -n 2 -d 11 12 13 14 15 
 bspc config border_width        2
 bspc config window_gap         2
 
