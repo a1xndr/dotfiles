@@ -29,9 +29,6 @@ super + {o,i}
 super + y
 	bspc node -w last.manual
 
-super + m
-	bspc node -s biggest
-
 super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
