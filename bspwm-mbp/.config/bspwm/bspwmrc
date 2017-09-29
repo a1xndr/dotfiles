@@ -2,10 +2,12 @@
 
 #export BSPWM_SOCKET=/tmp/bspwm-socket
 
-
-bspc monitor DP2 -n 0 -d 1 2 3 4 5 
-bspc monitor DP-1 -n 1 -d 6 7 8 9 10 
-bspc monitor eDP-1 -n 2 -d 11 12 13 14 15 
+count=1
+for screen in `xrandr | grep " connected " | cut -f 1 -d ' '`; do
+    bspc monitor $screen -n 0 \
+        -d $[$count] $[$count+1] $[$count+2] $[$count+3] $[$count+4];
+    count=$count+5;
+done
 bspc config border_width        2
 bspc config window_gap         2
 
