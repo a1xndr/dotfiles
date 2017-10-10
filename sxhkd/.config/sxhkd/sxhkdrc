@@ -39,7 +39,7 @@ super + {comma,period}
 	bspc desktop -C {backward,forward}
 
 super + bracket{left,right}
-	bspc desktop -f {prev,next} 
+        bspc desktop -f {prev,next}.local
 
 super + ctrl + {Left,Down,Up,Right}
 	bspc node -p {west,south,north,east}
