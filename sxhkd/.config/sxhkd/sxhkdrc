@@ -77,10 +77,11 @@ super + button{4,5}
 #
 
 super + Return
-        st -f Terminus:pixelsize=24,Sans:pixelsize=24
+        st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*
+        #st -f -*-ttyp0-*-*-*-*-24-*-*-*-*-*-*-*
         #if [ $HDPI = 0 ]; then st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*; else  fi
 super + shift + Return
-        st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*
+        st -f -*-ttyp0-*-*-*-*-24-*-*-*-*-*-*-*
         #if [ $HDPI = 1 ]; then st -f -*-ttyp0-*-*-*-*-12-*-*-*-*-*-*-*; else st -f Terminus:pixelsize=24,Sans:pixelsize=24 fi
 
 super + space	
